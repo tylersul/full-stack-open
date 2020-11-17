@@ -1,6 +1,7 @@
 Problem: In a diagram, depict a situation where user creates a new note on included URL page by added text into a field and clicking submit button.
 
 browser -> server: HTTP POST (Status code: 302) https://studies.cs.helsinki.fi/exampleapp/new_note
+server -> browser: Redirect request to /notes
 browser -> server: HTTP GET (Status code: 200) https://studies.cs.helsinki.fi/exampleapp/notes
 server -> browser: HTML code
 browser -> server: HTTP GET (Status code: 200) https://studies.cs.helsinki.fi/exampleapp/main.css
