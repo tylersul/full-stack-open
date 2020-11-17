@@ -1,0 +1,3 @@
+Problem: In a diagram, depict a situation where user creates a new note on included URL page by added text into a field and clicking submit button.
+
+
