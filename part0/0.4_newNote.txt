@@ -1,3 +1,16 @@
 Problem: In a diagram, depict a situation where user creates a new note on included URL page by added text into a field and clicking submit button.
 
+browser -> server: HTTP POST (Status code: 302) https://studies.cs.helsinki.fi/exampleapp/new_note
+browser -> server: HTTP GET (Status code: 200) https://studies.cs.helsinki.fi/exampleapp/notes
+server -> browser: HTML code
+browser -> server: HTTP GET (Status code: 200) https://studies.cs.helsinki.fi/exampleapp/main.css
+server -> browser: main.css
+browser -> server: HTTP GET (Status code: 200) https://studies.cs.helsinki.fi/exampleapp/main.js
+server -> browser: main.js
+browser -> server: HTTP GET (Status code: 200) https://studies.cs.helsinki.fi/exampleapp/data.json
+server -> browser: data.json
+browser -> server: HTTP GET (Status code: 200) https://studies.cs.helsinki.fi/favicon.ico
+server -> browser: favicon.ico
+
+The above represents the results of the submission of the form. Visual depiction is included in this directory under the same name.
 
